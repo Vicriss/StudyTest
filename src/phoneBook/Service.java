@@ -7,7 +7,7 @@ import java.util.List;
  * Created by vicriss on 2015/09/16.
  */
 public class Service {
-    private List<Person> personList2 = new ArrayList<>();
+    private List<Person> personList2 = new ArrayList<Person>();
 
 
     public List<Person> listSort(List<Person> personList){

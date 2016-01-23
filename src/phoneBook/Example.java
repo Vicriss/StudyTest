@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class Example {
 
-    public List<Person> personList= new ArrayList<>();
+    public List<Person> personList= new ArrayList<Person>();
 
     public List<Person> personExample(){
 

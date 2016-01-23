@@ -12,15 +12,15 @@ public class Main {
         Service service = new Service();
         Manager manager = new Manager();
 
-        System.out.println("====»¶Ó­====");
-        System.out.println("1.ä¯ÀÀÁªÏµÈË");
-        System.out.println("2.²éÕÒÁªÏµÈË");
-        System.out.println("3.Ìí¼ÓÁªÏµÈË");
-        System.out.println("4.É¾³ıÁªÏµÈË");
-        System.out.println("5.²éÕÒºÅÂë");
-        System.out.println("6.Ìí¼ÓºÅÂë");
-        System.out.println("7.É¾³ıºÅÂë");
-        System.out.println("0.ÍË³ö");
+        System.out.println("====æ¬¢è¿====");
+        System.out.println("1.æµè§ˆè”ç³»äºº");
+        System.out.println("2.æŸ¥æ‰¾è”ç³»äºº");
+        System.out.println("3.æ·»åŠ è”ç³»äºº");
+        System.out.println("4.åˆ é™¤è”ç³»äºº");
+        System.out.println("5.æŸ¥æ‰¾å·ç ");
+        System.out.println("6.æ·»åŠ å·ç ");
+        System.out.println("7.åˆ é™¤å·ç ");
+        System.out.println("0.é€€å‡º");
 
         Scanner in = new Scanner(System.in);
         int input = in.nextInt();
@@ -28,30 +28,30 @@ public class Main {
         while (input != 0) {
             switch (input) {
 
-                case 1://ä¯ÀÀÁªÏµÈË
+                case 1://æµè§ˆè”ç³»äºº
                     manager.scanList();
                     break;
 
-                case 2://²éÕÒÁªÏµÈË
+                case 2://æŸ¥æ‰¾è”ç³»äºº
                     manager.findByName();
                     break;
-                case 3://Ìí¼ÓÁªÏµÈË
+                case 3://æ·»åŠ è”ç³»äºº
                     manager.addPerson();
                     break;
 
-                case 4://É¾³ıÁªÏµÈË
+                case 4://åˆ é™¤è”ç³»äºº
                     manager.deletePerson();
                     break;
 
-                case 5://²éÕÒºÅÂë
+                case 5://æŸ¥æ‰¾å·ç 
                     manager.findByNumber();
                     break;
 
-                case 6://Ìí¼ÓºÅÂë
+                case 6://æ·»åŠ å·ç 
                     manager.addNumber();
                     break;
 
-                case 7://É¾³ıºÅÂë
+                case 7://åˆ é™¤å·ç 
                     manager.deleteNumber();
                     break;
 

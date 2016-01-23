@@ -24,14 +24,14 @@ public class Manager {
    }
 
    public void findByName(){
-      System.out.println("ÇëÊäÈëĞÕÃû£º");
+      System.out.println("è¯·è¾“å…¥å§“åï¼š");
       String name = in.nextLine();
       Person person = service.findByName(name);
       if(person!=null) {
          System.out.println(person);
       }
       else {
-         System.out.println("¸ÃÁªÏµÈË²»´æÔÚ£¬ÊÇ·ñÒªÌí¼ÓĞÂµÄÁªÏµÈË£¿ Y/N");
+         System.out.println("è¯¥è”ç³»äººä¸å­˜åœ¨ï¼Œæ˜¯å¦è¦æ·»åŠ æ–°çš„è”ç³»äººï¼Ÿ Y/N");
          if (in.next().equals("Y"))
             addPerson();
       }
@@ -41,21 +41,21 @@ public class Manager {
       Person person1 = new Person();
       String name = in.nextLine();
 
-      System.out.println("ÇëÊäÈëĞÕÃû£º");
+      System.out.println("è¯·è¾“å…¥å§“åï¼š");
       while (service.findByName(name)!=null){
-         System.out.println("ÁªÏµÈËÒÑ´æÔÚ£¡!");
+         System.out.println("è”ç³»äººå·²å­˜åœ¨ï¼!");
          name = in.nextLine();
       }
       person1.setName(name);
 
-      System.out.println("ÇëÊäÈëµç»°£º\n£¨ÊäÈë0½áÊø£©");
-      List<Integer> nums = new ArrayList<>();
+      System.out.println("è¯·è¾“å…¥ç”µè¯ï¼š\nï¼ˆè¾“å…¥0ç»“æŸï¼‰");
+      List<Integer> nums = new ArrayList<Integer>();
       num = in.nextInt();
       while (num!=0)
          nums.add(num);
       person1.setNumbers(nums);
 
-      System.out.println("ÇëÊäÈëµØÖ·£º");
+      System.out.println("è¯·è¾“å…¥åœ°å€ï¼š");
       person1.setAddress(in.nextLine());
 
       service.addPerson(person1);
@@ -63,18 +63,18 @@ public class Manager {
    }
 
    public void deletePerson(){
-      System.out.println("ÇëÊäÈëĞÕÃû£º");
+      System.out.println("è¯·è¾“å…¥å§“åï¼š");
       name = in.nextLine();
       service.deleteByName(name);
       System.out.println("done!");
    }
 
    public void findByNumber(){
-      System.out.println("ÇëÊäÈëµç»°£º");
+      System.out.println("è¯·è¾“å…¥ç”µè¯ï¼š");
       num = in.nextInt();
       Person person = service.findByNumber(num);
       if(person==null){
-         System.out.println("¸ÃºÅÂë²»´æÔÚ£¬ÊÇ·ñÒªÌí¼Ó£¿Y/N");
+         System.out.println("è¯¥å·ç ä¸å­˜åœ¨ï¼Œæ˜¯å¦è¦æ·»åŠ ï¼ŸY/N");
          if(in.next().equals("Y"))
             addNumber();
       }else
@@ -83,14 +83,14 @@ public class Manager {
 
    public void addNumber(){
 
-      System.out.println("Ìí¼Óµ½ÁªÏµÈË£º");
+      System.out.println("æ·»åŠ åˆ°è”ç³»äººï¼š");
       name = in.nextLine();
 
-      System.out.println("ÇëÊäÈëµç»°£º");
+      System.out.println("è¯·è¾“å…¥ç”µè¯ï¼š");
       num = in.nextInt();
 
       while (service.findByNumber(num)==service.findByName(name)){
-         System.out.println("ºÅÂëÒÑ´æÔÚ£¡");
+         System.out.println("å·ç å·²å­˜åœ¨ï¼");
          num = in.nextInt();
       }
 
@@ -100,7 +100,7 @@ public class Manager {
    }
 
    public void deleteNumber(){
-      System.out.println("ÇëÊäÈëµç»°£º");
+      System.out.println("è¯·è¾“å…¥ç”µè¯ï¼š");
       num = in.nextInt();
       service.deleteNumber(num);
    }
