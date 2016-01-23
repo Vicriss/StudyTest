@@ -1,11 +1,12 @@
 package phoneBook;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by vicriss on 2015/09/13.
  */
-public class Person {
+public class Person implements Serializable{
     private String name;
     private List<Integer> numbers ;
     private String address;

@@ -1,6 +1,6 @@
 package MD;
 
-import org.apache.commons.codec.binary.Hex;
+//import org.apache.commons.codec.binary.Hex;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -20,7 +20,7 @@ public class MDTest {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
             byte[] md5Bytes = md.digest(src.getBytes());
-            System.out.println("JDK MD5: "+ Hex.encodeHexString(md5Bytes));
+//            System.out.println("JDK MD5: "+ Hex.encodeHexString(md5Bytes));
         }catch (NoSuchAlgorithmException e){
             e.printStackTrace();
         }
