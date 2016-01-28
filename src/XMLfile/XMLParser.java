@@ -1,5 +1,6 @@
 package XMLfile;
 
+import org.testng.annotations.Test;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
@@ -14,12 +15,12 @@ import java.io.IOException;
 /**
  * Created by vicriss on 16-1-27.
  */
-public class XMLReader {
-
-    public void reader() throws ParserConfigurationException, IOException, SAXException {
+public class XMLParser {
+    @Test
+    public void parser() throws ParserConfigurationException, IOException, SAXException {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
-        Document document = db.parse("src/XMLfile/spring-mvc.xml");
+        Document document = db.parse("src/XMLfile/pub.xml");
         // 根据标签名获取节点
         NodeList beans = document.getElementsByTagName("bean");
         for(int i = 0; i < beans.getLength(); i++) {
@@ -37,6 +38,7 @@ public class XMLReader {
             for (int k = 0; k < childBeans.getLength(); k++) {
                 Node child = childBeans.item(k);
                 if (child.getNodeType() == Node.ELEMENT_NODE){
+                    // 获取节点间文本
                     System.out.println("CHILD:" + child.getTextContent());
                 }
             }
