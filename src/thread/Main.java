@@ -14,6 +14,7 @@ public class Main extends Thread{
         ExecutorService es = Executors.newCachedThreadPool();
         es.execute(tt);
         es.execute(new ThreadTest());
+        es.shutdown();
 //        Thread rtt = new Thread(rt,"rt");
 //        tt.setName("hh");
 //        tt.start();
