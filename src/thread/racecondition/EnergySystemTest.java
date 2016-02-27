@@ -17,10 +17,10 @@ public class EnergySystemTest {
 		for (int i = 0; i < BOX_AMOUNT; i++){
 			EnergyTransferTask task = new EnergyTransferTask(eng, i, INITIAL_ENERGY);
 			es.execute(task);
-			es.shutdown();
 //    		Thread t = new Thread(task,"TransferThread_"+i);
 //    		t.start();
-    	}
-    }
+		}
+		es.shutdown();
+	}
 
 }
