@@ -9,10 +9,10 @@ import java.util.logging.Logger;
 public class ThreadTest extends Thread {
 
     volatile boolean keepRunning = true;
-    public void run() {
+    public synchronized void run() {
         int count = 0;
         while (keepRunning){
-            Logger.getAnonymousLogger().info(getName() + ":running" + count);
+            Logger.getAnonymousLogger().info(getName() + "  running: " + count);
             if (count > 10)
                 keepRunning = false;
             count++;
@@ -26,22 +26,3 @@ public class ThreadTest extends Thread {
     }
 }
 
-class RunnableTest implements Runnable {
-    volatile boolean keepRunning = true;
-    @Override
-    public void run() {
-        int count = 0;
-        while (keepRunning){
-            Logger.getAnonymousLogger().info(Thread.currentThread().getName() + ":running" + count);
-            if (count > 10)
-                keepRunning = false;
-            count++;
-            try {
-                Thread.sleep(1000);
-                Thread.yield();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-}
