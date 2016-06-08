@@ -1,6 +1,6 @@
 package socket.TCP;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 import phoneBook.Person;
 
 import java.io.*;
