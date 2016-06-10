@@ -1,5 +1,7 @@
 package socket.TCP;
 
+import org.junit.Test;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -14,6 +16,7 @@ public class Server {
     private ServerSocket serverSocket;
     private Socket client;
 
+    @Test
     public void listen() throws IOException, ClassNotFoundException {
         serverSocket = new ServerSocket(8888);
         Logger.getAnonymousLogger().info("server started...");

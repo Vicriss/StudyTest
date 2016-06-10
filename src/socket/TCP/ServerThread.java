@@ -10,7 +10,8 @@ import java.util.logging.Logger;
 /**
  * Created by vicriss on 16-2-13.
  */
-public class ServerThread extends Thread {
+
+public class ServerThread implements Runnable {
     private BufferedReader br;
     private PrintWriter out;
     private Socket socket;

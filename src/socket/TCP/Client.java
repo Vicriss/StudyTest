@@ -23,10 +23,11 @@ public class Client {
         for (int i = 0; i < 4; i++) {
             Logger.getAnonymousLogger().info("input: ");
             String str = input.readLine();
-            if (!"bye".equals(str))
-                pw.println(str);
-            else
+            if ("bye".equals(str)) {
                 break;
+            } else {
+                pw.println(str);
+            }
             pw.flush();
 
             String line = br.readLine();
