@@ -1,0 +1,27 @@
++OK 950 octets
+Received: from smtpbg221.qq.com (unknown [183.60.2.226])
+	by mx41 (Coremail) with SMTP id W8CowEBZCkVqH11XFZUXBw--.59167S3;
+	Sun, 12 Jun 2016 16:38:02 +0800 (CST)
+X-QQ-Spam: true
+X-QQ-mid: esmtp32t1465720556t168t06044
+Received: from a (unknown [221.237.85.179])
+	by esmtp4.qq.com (ESMTP) with SMTP id 0
+	for <vicriss@163.com>; Sun, 12 Jun 2016 16:30:31 +0800 (CST)
+X-QQ-SSF: 0100000000000000111208000020001
+X-QQ-CSender: mplee@qq.com
+Sender: mplee@qq.com
+form:<mplee@qq.com>
+to:<vicriss@163.com>
+subject:Test Mail
+X-QQ-SENDSIZE: 520
+X-CM-TRANSID:W8CowEBZCkVqH11XFZUXBw--.59167S3
+Message-Id:<575D1F6A.C1BBBC.21681@m12-91.163.com>
+Authentication-Results: mx41; spf=pass smtp.mail=mplee@qq.com;
+X-Coremail-Antispam: 1Uf129KBjDUn29KB7ZKAUJUUUUU529EdanIXcx71UUUUU7v73
+	VFW2AGmfu7bjvjm3AaLaJ3UbIYCTnIWIevJa73UjIFyTuYvjxUVpnmDUUUU
+Date: Sun, 12 Jun 2016 16:38:02 +0800 (CST)
+From: mplee@qq.com
+
+this mail from mplee, to vicriss163
+
+.

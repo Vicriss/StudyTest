@@ -1,0 +1,41 @@
++OK
+X-Mda-Received: from <mx543-39.mail.sina.com.cn>([<202.108.248.119>])
+ by <mda-113-65.mda.fmail.tg.sinanode.com> with LMTP id <11504>
+ Jul 02 2016 21:18:31 +0800 (CST)
+X-Sina-MID:042B835DFBC723AFC323393E9D7103D1B800000000000001
+X-Sina-Attnum:0
+Received: from m12-12.163.com (HELO m12-12.163.com)([220.181.12.12])
+	by sina.com with SMTP
+	2 Jul 2016 21:18:31 +0800 (CST)
+X-Sender: vicriss@163.com
+Authentication-Results: sina.com; dkim=pass (Signature verified) header.i=163.com
+Received-SPF: Pass (sina.com: SPF record at a.spf.163.com designates 220.181.12.12 as permitted sender) identity=from;
+	client-ip=220.181.12.12;
+	receiver=sina.com;
+	envelope-from=vicriss@163.com;
+	helo=m12-12.163.com
+X-SMAIL-MID: 39813622020131
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=163.com;
+	s=s110527; h=From:Subject:Message-Id:Date; bh=sh32NzApsZlntJLAmI
+	QUv70SaGUVn4YvnAJU3kKtQ4c=; b=B37enTpf3xnGss4WkAY2/vG4BYyAYy+9dv
+	BNSymYim4oQJb1DSubpdMxK7rRJW7g/5oMSYYqlvM7aeJMu7J4YrzHZ95fbstErn
+	yK8RA4aj5gpZrmmPFV+njVkZr8xaWBl+FEXJc1EO37u9cpLlVPzFDr8Cx/aDjZGn
+	m3dLu48oM=
+Received: from vicriss@163.com (unknown [221.237.85.100])
+	by smtp8 (Coremail) with SMTP id DMCowAA3cngdv3dXCcpSBA--.63580S2;
+	Sat, 02 Jul 2016 21:18:31 +0800 (CST)
+From:<vicriss@163.com>
+To:<vicriss@sina.com>
+Subject:javamail
+X-CM-TRANSID:DMCowAA3cngdv3dXCcpSBA--.63580S2
+Message-Id:<5777BF27.DA9C53.14825@m12-12.163.com>
+X-Coremail-Antispam: 1Uf129KBjDUn29KB7ZKAUJUUUUU529EdanIXcx71UUUUU7v73
+	VFW2AGmfu7bjvjm3AaLaJ3UbIYCTnIWIevJa73UjIFyTuYvjxU9zuWDUUUU
+X-Originating-IP: [221.237.85.100]
+Date: Sat, 2 Jul 2016 21:18:31 +0800 (CST)
+X-CM-SenderInfo: xylf2xlvv6il2tof0z/xtbBogeaQ1aDpF8RGQAAsa
+
+
+this is a mail from 163.
+
+.
