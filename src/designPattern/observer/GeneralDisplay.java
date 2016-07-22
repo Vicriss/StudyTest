@@ -1,7 +1,5 @@
 package designPattern.observer;
 
-import java.util.Observable;
-import java.util.Observer;
 
 /**
  * Created by wybe on 7/22/16.
@@ -13,17 +11,7 @@ public class GeneralDisplay implements Observer {
 
     public GeneralDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
-        weatherData.addObserver(this);
-    }
-
-    @Override
-    public void update(Observable o, Object arg) {
-        if (o instanceof WeatherData) {
-            WeatherData weatherData = (WeatherData) o;
-            this.temperature = weatherData.getTemperature();
-            this.humidity = weatherData.getHumidity();
-            display();
-        }
+        weatherData.register(this);
     }
 
     public void display() {
@@ -53,5 +41,12 @@ public class GeneralDisplay implements Observer {
 
     public void setWeatherData(WeatherData weatherData) {
         this.weatherData = weatherData;
+    }
+
+    @Override
+    public void update() {
+        this.temperature = weatherData.getTemperature();
+        this.humidity = weatherData.getHumidity();
+        display();
     }
 }

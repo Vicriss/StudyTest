@@ -1,17 +1,18 @@
 package designPattern.observer;
 
-import java.util.Observable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by wybe on 7/22/16.
  */
-public class WeatherData extends Observable {
+public class WeatherData implements Subject{
     private float temperature;
     private float humidity;
     private float pressure;
+    private List<Observer> observers = new ArrayList<>();
 
     public void measureChanged() {
-        setChanged();
         notifyObservers();
     }
 
@@ -44,5 +45,33 @@ public class WeatherData extends Observable {
 
     public void setPressure(float pressure) {
         this.pressure = pressure;
+    }
+
+    public List<Observer> getObservers() {
+        return observers;
+    }
+
+    public void setObservers(List<Observer> observers) {
+        this.observers = observers;
+    }
+
+    @Override
+    public void register(Observer obj) {
+        if (obj != null)
+            this.observers.add(obj);
+    }
+
+    @Override
+    public void deleteObserver(Observer obj) {
+        int index = observers.indexOf(obj);
+        if (index >= 0)
+            observers.remove(index);
+    }
+
+    @Override
+    public void notifyObservers() {
+        for (Observer observer : this.observers) {
+            observer.update();
+        }
     }
 }
