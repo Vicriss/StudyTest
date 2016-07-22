@@ -10,14 +10,14 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 //        IOStream ioStream = new IOStream();
-//        ioStream.fileCopy("src/factory/properties",
+//        ioStream.fileCopy("src/designPattern.factory/properties",
 //                "src/fileIO/fileoutput.txt");
 
 //        StreamRW s = new StreamRW();
 //        s.streamReader("src/fileIO/fileoutput.txt");
 
 //        BufferedRW b = new BufferedRW();
-//        b.bufferedWriter("src/factory/properties",
+//        b.bufferedWriter("src/designPattern.factory/properties",
 //                "src/fileIO/fileoutput.txt");
 
         ObjectSerialization os = new ObjectSerialization();

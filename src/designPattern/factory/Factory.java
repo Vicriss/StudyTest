@@ -1,4 +1,4 @@
-package factory;
+package designPattern.factory;
 
 /**
  * Created by vicriss on 2015/09/09.
