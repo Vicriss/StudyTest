@@ -9,12 +9,15 @@ import java.util.concurrent.Executors;
 public class Main {
     public static void main(String[] args) {
         Sell sell = new Sell();
+        Sell sell1 = new Sell();
         ThreadTest tt = new ThreadTest();
         ExecutorService es = Executors.newCachedThreadPool();
-        for (int i = 0; i < 3; i++) {
-            es.execute(sell);
-//            es.execute(tt);
-        }
+//        for (int i = 0; i < 3; i++) {
+//            es.execute(sell);
+////            es.execute(tt);
+//        }
+        es.execute(sell);
+        es.execute(sell1);
         es.shutdown();
     }
 }
