@@ -6,6 +6,6 @@ package designPattern.proxy;
 public class DaoImpl implements Dao {
     @Override
     public void save() {
-        System.out.println("save data...");
+        System.out.println("save data");
     }
 }
